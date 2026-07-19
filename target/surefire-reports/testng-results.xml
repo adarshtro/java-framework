@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-19T12:22:29 IST" name="MyArtifactSuite" finished-at="2026-07-19T12:22:31 IST" duration-ms="1915">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4278a03f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-07-19T12:22:29 IST" name="AllSuites" finished-at="2026-07-19T12:22:31 IST" duration-ms="1915">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@4278a03f]" started-at="2026-07-19T12:22:29 IST" name="setUpClass" finished-at="2026-07-19T12:22:29 IST" duration-ms="184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@18078bef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4278a03f]" started-at="2026-07-19T12:22:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-07-19T12:22:31 IST" duration-ms="1703" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Able to search movie"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Movie"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because "utils.ConfigReader.properties" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "utils.ConfigReader.properties" is null
+at utils.ConfigReader.getProperty(ConfigReader.java:28)
+at stepdefs.SearchMovie.page_has_opened_and_working(SearchMovie.java:17)
+at ✽.Page has opened and working(file:///Users/adarshmohanakumar/Documents/dev/java/everything/src/test/resources/features/login.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@4278a03f]" started-at="2026-07-19T12:22:31 IST" name="tearDownClass" finished-at="2026-07-19T12:22:31 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- AllSuites -->
+  </suite> <!-- MyArtifactSuite -->
+</testng-results>

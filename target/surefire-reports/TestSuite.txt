@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.074 sec <<< FAILURE! - in TestSuite
+runScenario(runners.TestRunner)  Time elapsed: 1.706 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "utils.ConfigReader.properties" is null
+	at utils.ConfigReader.getProperty(ConfigReader.java:28)
+	at stepdefs.SearchMovie.page_has_opened_and_working(SearchMovie.java:17)
+	at ✽.Page has opened and working(file:///Users/adarshmohanakumar/Documents/dev/java/everything/src/test/resources/features/login.feature:4)
+
