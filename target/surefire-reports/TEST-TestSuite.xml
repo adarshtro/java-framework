@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1.706" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="5.065" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -24,7 +24,7 @@
     <property name="stderr.encoding" value="UTF-8"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="guice_custom_class_loading" value="CHILD"/>
-    <property name="classworlds.conf" value="/Users/adarshmohanakumar/Documents/dev/java/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf6477589634943084246.tmp"/>
+    <property name="classworlds.conf" value="/Users/adarshmohanakumar/Documents/dev/java/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf10716286956403855736.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/adarshmohanakumar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -59,32 +59,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="Temurin-21.0.11+10"/>
-    <property name="m2e.build.project.data.socket.port" value="50053"/>
+    <property name="m2e.build.project.data.socket.port" value="49394"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="runScenario" classname="runners.TestRunner" time="1.706">
-    <failure message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utils.ConfigReader.properties&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "utils.ConfigReader.properties" is null
-	at utils.ConfigReader.getProperty(ConfigReader.java:28)
-	at stepdefs.SearchMovie.page_has_opened_and_working(SearchMovie.java:17)
-	at ✽.Page has opened and working(file:///Users/adarshmohanakumar/Documents/dev/java/everything/src/test/resources/features/login.feature:4)
-</failure>
-    <system-out><![CDATA[
-Scenario: Able to search movie                    # src/test/resources/features/login.feature:3
-  ✘ Given Page has opened and working             # stepdefs.SearchMovie.page_has_opened_and_working()
-        java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "utils.ConfigReader.properties" is null
-        	at utils.ConfigReader.getProperty(ConfigReader.java:28)
-        	at stepdefs.SearchMovie.page_has_opened_and_working(SearchMovie.java:17)
-        	at ✽.Page has opened and working(file:///Users/adarshmohanakumar/Documents/dev/java/everything/src/test/resources/features/login.feature:4)
-  ↷ When User enters the text in the serach field # stepdefs.SearchMovie.user_enters_the_text_in_the_serach_field()
-  ↷ And The user clicks on the search button      # stepdefs.SearchMovie.the_user_clicks_on_the_search_button()
-  ↷ Then The movie list should be displayed       # stepdefs.SearchMovie.the_movie_list_should_be_displayed()
-]]></system-out>
-    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Jul 19, 2026 12:22:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 150, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 150
-]]></system-err>
-  </testcase>
+  <testcase name="runScenario" classname="runners.TestRunner" time="5.065"/>
+  <testcase name="runScenario" classname="runners.TestRunner" time="4.56"/>
 </testsuite>

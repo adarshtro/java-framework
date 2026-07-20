@@ -1,8 +1,9 @@
-pages/Sample.class
 utils/ConfigReader.class
+utils/WebActions.class
 runners/TestRunner.class
 stepdefs/SearchMovie.class
 hooks/Hooks.class
 base/BaseTest.class
 base/DriverFactory.class
 utils/DriverFactory.class
+pages/BMSHome.class
